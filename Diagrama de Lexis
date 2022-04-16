@@ -1,0 +1,121 @@
+---
+title: "Diagrama de Lexis"
+author: "Roldán Osvaldo Carbajal"
+date: '2022-03-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Diagrama de Lexis!!!!!!!! (Linea de Vida)
+
+El diagrama de Lexis ayuda a comprender algunos eventos y fenomenos demograficos a travez de una linea del tiempo !!!!
+Delimitacion Temporal en demografia es escencial, el tiempo como elemento para analizar la dinamica constante y cambios en los espacios poblacionales.
+
+En particular en Demografia podemos definir 2 tiempos 
+      1) Tiempo Calendario 
+      2) Tiempo de eventos demograficos 
+      
+
+   Por ejemplo: la edad se puede medir en 2 sentidos, por un lado, se mide a partir      del nacimiento
+   por otro lado se puede en años cumplidos (aniversario)
+   
+   En demografia existe el concepto de edad exacta
+   este concepto de edad se exata se puede ejemplificar de la sig manera:
+   
+   supongamos que una persona nacio el 23 de julio de 1985 y queremos saber, su edad     exacta al dia de hoy, es decir,¿Cuantos años exactos tiene al 11 de marzo de 2022.
+   
+  han transcurrido 262 dias hasta el 11 de marzo de 2022
+  .: 36 años y 262 dias 
+  
+  su edad exacta seria 36 + (262/365) = 36.72 
+  
+  Reprecentacion Grafica
+  
+  ######Recordatorio Pegar la imagen de edad exacta y años cumplidos#####
+  
+  Un elemento importante que interesa en los fenomenos demograficos es el numero de eventos que ocurren a traves del tiempo, en este sentido, en el diagrama de lexis, se puede representar los nacimientos, las defunciones, matrimonio, etc.. 
+en este diagrama seran tomados los años calendario y las edades cumplidas
+
+flujo: con la poblacion que permacnece en el tiempo 
+efectivo: ocurrencia de un evento en un tiempo determinado
+cohorte: un grupo de individuos que experimentan un evento durante un tiempo determinado 
+generacion: grupo de individuos que nace en un momento determinado 
+
+Ahora vamos a plantear algunos eventos demograficos que ocurren en el diagrama planteado
+
+
+ab= nacimientos 1990
+ac+bd= 2  lineas de Vida
+abc= defunciones 1990
+cdb= defunciones 1991
+
+digamos que en demografia se pueden plantear tres tipos de analisis
+
+ 1) Analisis Transversar: Se asocia a un momento en el tiempo
+ 2) Analisis Longitudinal: que se vincula con estudios a traves del tiempo, es decir, analisis de una generacion o analisis de una cohorte
+ 3) Analisis retrospectivos: Se vinculan con los estudios que se realizan en un tiempo pasado, es decir, el analisis de vida una poblacion adulta mayor durante su juventud
+ 
+ 
+En particular vamos a ver el analisis longitudinal que se relaciona con el diagrama, uno de los aspectos importantes del diagrama de lexis tiene que ver con un analisis longitudinal 
+
+Por ejemplo, los nacimientos, las defunciones, la nupcialidad, se les llama eventos demograficos, de estos eventos surgen fenomenos demograficos como la fecundidad, la mortalidad y la migración.
+
+
+
+
+
+########## Las medidas en Demografia 
+
+Medidas Relativas
+Razones: Cociente entre 2 magnitudes independientes
+
+Ejemplo: Poblacion Masculina/ Femenina ( Cuantos Hombres Hay con respecto a la poblacion Femenina)
+ 
+Proporciones: Es la relacion entre dos medidas de efectivo o flujo 
+Ejemplo: 
+Poblacion Masculina / Poblacion Total (Proporcion de Hombres con respecto a la poblacion total)
+
+Nacimiento de Hombres / Nacimientos Totales (Nacimiento de Hombres con respecto a los nacimientos totales)
+
+Tasa: Cociente entre un Flujo y Efectivo 
+Ejemplo: Nacimientos en 1 año / Poblacion Femenina 
+
+
+Ejemplo de Razon:
+Pob Masculina: 45421
+Pob Femenina:  46185
+
+Razon= Pob Masculina / Pob Femenina = 45421/ 46185= 98.3 
+Por cada 100 mujeres hay 98.3 Hombres!!!!
+
+
+
+Ejemplo de Proporcion:
+Poblacion Masculina: 45421
+Poblacion Total:  91601
+
+Proporcion= Poblacion Masculina / Poblacion Total = 0.4958
+Del total de la poblacion 0.49 soy hombres o 49%
+De cada 100 habitantes hay 49 Hombres 
+
+
+Ejemplo de Tasas:
+Tasa de Nacimiento= Nacimiento en 1 año / Poblacion Total 
+ Nacimientos: 2290
+ Pob Total: 92394 
+ 
+ T Nacimiento= .002478
+ Multiplicando por 1000
+ podemos decir que por cada 1000 habitantes nacen 24 personas
+ 
+ Tasa de Crecimiento Poblacional= (Nacimientos - Defunciones)/ Poblacion a mitad del año 
+ 
+ Nacimientos: 2299
+ Defunciones: 428
+ Poblacion: 92394
+ 
+ T C Poblacional= .202
+ Si lo multiplicamos por 100 obtenemos una Tasa del 20.2%
+ 
