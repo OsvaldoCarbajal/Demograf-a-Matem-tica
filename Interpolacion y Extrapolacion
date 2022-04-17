@@ -1,0 +1,160 @@
+---
+title: "Interpolacion y Extrapolacion"
+author: "Roldán Osvaldo"
+date: '2022-03-23'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#Tasa de Crecimiento Poblacional 
+
+##Tasa de Crecimiento anual
+$$TCA=\frac{P_{t+1}-P_t}{P_t}$$
+
+##Tasa de Crecimiento Exponencial
+$$TCP= P_t*e^{r*n}$$
+Despues de calcular la tasa de crecimiento exponencial es decir de r. 
+Con esta información se podria calcular la cantidad de población en un país, región dentro del periodo estimado de la tasa de crecimiento Por ejemplo, si estimamos una tasa de crecimiento exponencial de la población en el periodo 2004 a 2011 nosotros podriamos calcular la cantidad de población  dentro de ese periodo en cualquier tiempo a tráves del método de interpolación, si nosotros quisieramos  calcular la población fuera de ese periodo el método para este cálculo se llama extrapolación y se plantea de la siguiente manera:
+Ejemplo:
+Población inicial del año 2005, 30 de junio
+Queremos calcular la poblacion del 31 de diciembre de 2008
+Tenemos una tasa de crecimiento de 0.01399829
+
+### EJEMPLO DE INTERPOLACIÓN
+1. POB (32.DIC.2008) = ????????
+2. POB (30.JUN.2005) = 1101318000
+3. POB (30.JUN.2011) = 1197813000
+
+POB (31.DIC.2008) = 1101318000 * e^(0.01399829*3.5) = 1,156,619,654
+
+$$P_{t+n}=P_t*e^{r*n}$$
+$$r=\frac{Ln{\frac{P_{t+n}}{P_t}}}{n}$$
+
+
+##Tiempo de Duplicidad de una Poblacion
+Lo que se intenta plantear y conocer es que tiempo una poblacion determinada se duplica 
+
+pt=poblacion inicial
+pt+n=poblacion final 
+r=tasa de crecimiento exponencial
+n= tiempo
+
+      pt+n= pt*e^(r*n)
+
+
+queremos conocer en que tiempo se va a duplicar la poblacion con la tasa de crecimiento del año 1970, sabiendo que r=3.1 y la poblacion = 50.6 Mil personas
+
+en cuanto tiempo Mexico tendra 100 mil personas?
+22.9
+
+
+###Dinamica Demografica
+Se relaciona con el tamaño, la composicion, las perdidas y las ganancias de la poblacion.
+
+Tamaño: Se refiere a la cantidad de las personas que existen en un territorio y tiempo determinado
+Composicion: se refiere al sexo, grupo de edad(caracteristicas de una poblacion)
+Las perdidas y las Ganancias se vinculan con la Fecundidad, mortalidad (perdidas) y la Migracion 
+
+##Tasas Brutas de la Poblacion
+Una tasa Bruta, como su nombre lo indica, no considera la composicion de la poblacion  (Sexo,Edad,Matrimonios)
+
+Lo vamos a Definir como:
+
+    TB: Evento/ Poblacion Media
+    
+Poblacion Media: El promedio de Poblacion durante un periodo de Tiempo
+La poblacion a mitad del año normalmente se relaciona con los datos del censo y se asocia a conocer la poblacion a mitad del año (30 Junio)
+
+Ejemplo
+   Tenemos la poblacion del 2004 y la poblacion del 2005
+   2004: 293 657 000
+   2005: 296 410 000
+   
+Entonces la Poblacion Media del año 2004
+Pmed= (293 657 000 + 296 410 000)/2
+
+
+Calcular las Tasas Brutas de los Siguientes Eventos   
+  Tasas Brutas de USA del 2004 al 2005
+  
+  Nacimientos: 4129000    ---> Nacimientos/Pmed     TBN= 0.01399
+  Muertes: 2425000        ---> Muertes/Pmed      TBM= 0.008219
+  inmgracion: 1122000     ---> Inmigracion/Pmed      TBI= 0.003802
+  Emigracion: 73000       ---> Emigracion/Pmed      TBM= 0.24
+  
+  
+#############################################################################################
+##Tasas Especificas
+
+Estas Tasas si tienen Relacion o Vinculo con las caracteristicas Poblacionales (Sexo, Grupos de Edad)
+El planteamiento de las tasas especificas es el siguiente 
+
+Te^i= Tasa especifica de un evento con la caracteristica i
+E^i = Es el numero de evento de caracteristica i
+Pob^i= Es la poblacion Media con caracteristica i
+
+#############################################################################################
+##Proporcion de Sexos
+Este es otro indicador demografico que permite conocer la cantidad de hombres con respecto a las mujeres
+Es el indicador que muestra el balance entre hombres y mujeres
+Se puede calcular la proporcion masculina y se calcula dividiendo el numero de hombres entre el numero de Mujeres
+ 
+  PS= Hombres^i/Mujeres^i
+  
+Hombres(0-4 años) en 2008 = 8226630  ------> Brasil
+Mujeres(0-4 años) en 2008 = 7976611
+
+Hombres(0-4 años) en 2008 = 1453690  ------> Italia
+Mujeres(0-4 años) en 2008 = 1373787
+
+
+Ps^(0-4)= 1.031 en Brazil existen 103 hombres por cada 100 mujeres
+Ps^(0-4)= 0.058 en Italia existe 5 Hombres por cada 100 mujeres
+
+#####################################################################################
+Pmedia:6166934
+
+
+##Tasa Bruta Natalidad 2020 Guanajuato
+
+Nacimientos 2020: 85259
+Tasabruta2020:  0.01382518
+##Tasa Bruta Mortalidad 2020 Guanajuato
+
+Muertes 2020: 51677	
+TasaBruta2020: 0.008379691
+
+##Tasa Bruta Inmigrantes Internos 2020 Guanajuato
+Inmigrantes Internos:557773
+TasaBruta2020:0.09044575
+
+##Tasa Bruta Emigrantes Internos 2020 Guanajuato
+Emigrantes Internos: 646602
+TasaBruta2020:0.1048498
+
+########################################################################################
+##Proporcion de Sexos al Nacimiento
+
+La proporcion de Sexos al nacimiento se define de la siguiente manera
+
+    PSN=nac_h/nac_m
+    
+########################################################################################
+###Proporcion de Niños por Mujer
+
+PNM=POB_<5años/PobFemenina
+
+POB_<5años= 2827377
+PobFemenina15-44=23855033
+
+PNM=2827377/23855033
+
+########################################################################################
+##Tasa de Dependencia
+La tasa de dependencia se relaciona con las personas que tienen mas posibilidades de ser dependientes
+
+TD=(Pob_0-14 + Pob_65ymas)/(Pob_15-64)
+
+    
