@@ -1,0 +1,52 @@
+---
+title: "Ecuación Compensadora"
+author: "Roldán Osvaldo Carbajal Camacho"
+date: '2022-03-22'
+output: html_document
+---
+
+La fórmula compensadora es uno de los principales elementos de la demografía y se plantea de la siguiente manera:  
+$$P_{t+n}=P_t + N_{t+n} - D_{ta t+n} + I_{tat+n} - E_{ta t+n}$$
+Dónde:  
+_N_=Nacimientos  
+_D_=Funciones  
+_I_=Inmigrantes  
+_E_=Emigrantes  
+
+**Ejemplo:** $P_{2022}=P_{2021}+N_{2021-2022}-D_{2021-2022}+I_{2021-2022}-E_{2021-2022}$
+$$P_{t+n}-P_t = (N_{t+n} - D_{ta t+n}) + (I_{tat+n} - E_{ta t+n})$$
+$$CP=CN+CS$$
+Dónde:  
+_CP_=Crecimiento Poblacional  
+_CN_=Crecimiento Natural  
+_CS_=Crecimiento social  
+
+**Ejemplo**  
+$P_{2004}=243,657,000$  
+$P_{2005}=296,410,000$   
+$N_{2004-2005}=4,129,000$  
+$D_{2004-2005}=2,425,000$  
+$I_{2004-2005}=1,122,000$  
+$E_{2004-2005}=73.000$  
+
+$(296 410 000-243 657 000)=(4 129 000-2 425 000)+(1 122 000-73 000)$
+
+$CP=2,753,000$  
+$CN=1,704,000$  
+$CS=1,044,000$  
+
+$$P_{t+n}=P_t + N_{t+n} - D_{ta t+n} + I_{tat+n} - E_{ta t+n}$$
+Esta, nos sirve para conocer que entidades estan teniendo mayor atraccion y entidades con mayor expulsion 
+
+
+ **Entidades** |  **CN** | **CS_I** |  **(CS_I)^ ** | **CP** |
+---------------| --------|----------| --------------|--------|
+Edo Mex        | 44441   | 49607    |  -12202       | 81846  | 
+Michoacan      | 32585   | 44377    |    3381       | 80313  | 
+Chiapas       | 35065   | 30486    |  7391     |72942  | 
+Baja California      |6724   | 9364    |   -2653       | 13435  | 
+Nuevo Leon| 18518  | 29314   |  4996       | 52828  | 
+Jalisco     |2001   | 1044    |   174      | 3219  | 
+Sinaloa        | 2629  | 699   |  -2393       | 935  | 
+Guanajuato      | 3228  | 1946    |   1306       | 6474  |
+TOTAL     | 145191   | 16689    |  0       | 31992  | 
