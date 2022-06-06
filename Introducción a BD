@@ -1,0 +1,21 @@
+---
+title: "Datos"
+author: "Roldán Osvaldo Carbajal Camacho"
+date: '2022-05-11'
+output: html_document
+---
+Trabajo Bases de Datos
+
+base1<-read.csv(file.choose())
+require(dplyr)
+base2<-base1 %>%
+as_tibble() %>%
+mutate(gpoeda=case_when(EDAD<=0 & EDAD<=14 ~ 1,
+                        EDAD>=15 & EDAD<=29 ~ 2, 
+                        EDAD>=30 & EDAD<=59 ~ 3, 
+                        EDAD>=60 & EDAD<=110 ~ 4,
+                        EDAD==999~5 ),
+       conyu=case_when(SITUA_CONYUGAL==1| SITUA_CONYUGAL==5~1 , SITUA_CONYUGAL<=2 & SITUA_CONYUGAL<=4 ~ 2,
+                       SITUA_CONYUGAL==6 ~ 3, SITUA_CONYUGAL==9 ~4))
+table(base2$EDAD,base2$gpoeda)
+
