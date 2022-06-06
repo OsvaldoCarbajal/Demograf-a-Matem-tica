@@ -1,0 +1,36 @@
+---
+title: "Ecuaciones de Fecundidad en Edad Desplegada"
+author: "Roldán Osvaldo Carbajal Camacho"
+date: '2022-05-04'
+output: html_document
+---
+gpoedad<-c("15-19", "20-24", "25-29", "30-34", "35-39", "40-44")
+nac<-c(12130,42103, 80933, 93107, 55985, 11480)
+pobfem<-c(727168, 782583, 791698,751566,814971,769345)
+nacfem<-c(5895, 20461, 39331, 45247, 27207, 5579)
+nachom<- nac-nacfem
+propsex=sum(nachom)/sum(nacfem)*100
+S=(100/(100+propsex))
+tef<- (nac/pobfem)
+teffem<-(nacfem/pobfem)
+n=5
+TGrF = sum((nac)/pobfem)*5
+TGF <- sum(tef)*n
+TBR <- TGF*S
+tasas <- data.frame(gpoedad, nac, pobfem, nacfem, nachom, tef, teffem)
+
+###Baja California sur
+gpoedad<-c("15-19", "20-24", "25-29", "30-34", "35-39")
+nac<-c(82, 360, 576, 476, 323)
+pobfem<-c(727168, 782583, 791698,751566,814971,769345)
+nacfem<-c(5895, 20461, 39331, 45247, 27207, 5579)
+nachom<- nac-nacfem
+propsex=sum(nachom)/sum(nacfem)*100
+S=(100/(100+propsex))
+tef<- (nac/pobfem)
+teffem<-(nacfem/pobfem)
+n=5
+TGrF = sum((nac)/pobfem)*5
+TGF <- sum(tef)*n
+TBR <- TGF*S
+tasas <- data.frame(gpoedad, nac, pobfem, nacfem, nachom, tef, teffem)
